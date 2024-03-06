@@ -11,13 +11,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         list($nombre, $correo, $clave) = explode("|", $usuario);
         if ($correo == $correo_login && $clave == $clave_login) {
             $usuario_encontrado = true;
-            echo "¡Bienvenido de nuevo, $nombre!";
-            break;
+            echo "<script>alert('usted inicio seccion con!');</script>";
         }
+        header("Location: ../index.html");
+        exit;
     }
+
 
     if (!$usuario_encontrado) {
         echo "Error: Usuario no encontrado o contraseña incorrecta.";
+        header("Location: login.php");
+        exit;
     }
 }
-?>
