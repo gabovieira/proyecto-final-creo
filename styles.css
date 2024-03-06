@@ -91,10 +91,11 @@ left: 10px;
 	background-color: white;
 	
 }
-#user-icon-button{
-	color: var(--primary-color);
-	font-size: 10px;
-	left: 10px;
+#user-icon-button {
+    color: var(--primary-color);
+    position: relative;
+    font-size: 15px;
+    left: -3px;
 }
 
 
@@ -111,7 +112,7 @@ left: 10px;
 .count-products{
 	position: relative;
     top: -2px;
-	right: -48px;
+	right: -210px;
     background-color: var(--primary-color);
     color: #fff;
     width: 18px;

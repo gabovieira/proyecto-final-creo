@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $datos_usuario = "$usuario|$correo|$clave\n";
         file_put_contents('usuarios.txt', $datos_usuario, FILE_APPEND);
         echo "Registro exitoso. ¡Bienvenido, $usuario!";
+        
     } else {
         echo "Error: Todos los campos son obligatorios.";
     }

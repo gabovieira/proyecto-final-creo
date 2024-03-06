@@ -9,19 +9,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     foreach ($usuarios as $usuario) {
         list($nombre, $correo, $clave) = explode("|", $usuario);
-        if ($correo == $correo_login && password_verify($clave_login, $clave)) {
+        if ($correo == $correo_login && $clave == $clave_login) {
             $usuario_encontrado = true;
-            echo "<script>alert('¡Bienvenido de nuevo, $nombre!');</script>";
+            echo "¡Bienvenido de nuevo, $nombre!";
+
             header("Location: ../index.html");
-            exit;
+            break;
         }
     }
 
     if (!$usuario_encontrado) {
-        echo "<script>alert('Error: Usuario no encontrado o contraseña incorrecta.');</script>";
-        header("Location: login.php");
-        exit;
+        echo "Error: Usuario no encontrado o contraseña incorrecta.";
     }
 }
-?>
-
