@@ -71,7 +71,13 @@ logo.png.png
     border: none;
     cursor: pointer;
 }
+#fas fa-user{
+display: flex;
+color: var(--primary-color);
+position: relative;
+left: 10px;
 
+}
 
 
 
@@ -84,6 +90,11 @@ logo.png.png
 	cursor: pointer;
 	background-color: white;
 	
+}
+#user-icon-button{
+	color: var(--primary-color);
+	font-size: 10px;
+	left: 10px;
 }
 
 
