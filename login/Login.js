@@ -12,5 +12,8 @@ const btnSingIn =document.getElementById("Sing-in"),
         formLogin.classList.add("hide");
         formRegister.classList.remove("hide")
     })
+    
+
+    
 
 
