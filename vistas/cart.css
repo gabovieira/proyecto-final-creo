@@ -119,9 +119,10 @@ img{
 
 /* Main */
 .container-items{
+  
     margin: 10px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 2fr);
     gap: 20px;
 }
 
@@ -156,6 +157,7 @@ img{
     flex-direction: column;
     gap: 10px;
 }
+
 
 .price{
     font-size: 18px;

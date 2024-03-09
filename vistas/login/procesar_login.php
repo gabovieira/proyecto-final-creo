@@ -13,21 +13,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         list($nombre, $correo, $clave) = explode("|", $usuario);
         if ($correo == $correo_login && $clave == $clave_login) {
             $usuario_encontrado = true;
-            echo "¡Bienvenido de nuevo, $nombre!";
-
-            header("Location: ../index.html");
-            break;
+            echo '<script> alert("Bienvenido de nuevo");
+            window.location="../../index.php" </script>';
+            exit;
         }
     }
 
     // Si llegamos aquí, el usuario no fue encontrado o la contraseña es incorrecta
     $_SESSION['error_message'] = 'Error: Usuario no encontrado o contraseña incorrecta.';
-    header("Location: login.php");
+    echo '<script> alert(" usuario o contraseña incorrecta, intente de nuevo");
+     window.location="login.php" </script>';
     exit;
 }
 
 // Si llegamos a este punto, es porque algo salió mal
 $_SESSION['error_message'] = 'Error inesperado. Por favor, inténtelo de nuevo más tarde.';
-header("Location: login.php");
+echo '<script> alert(" error inesperado intente de nuevo");
+    window.location="login.php" </script>';
 exit;
-?>
