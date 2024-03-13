@@ -118,13 +118,6 @@ img{
 
 
 /* Main */
-.container-items{
-  
-    margin: 10px;
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    gap: 20px;
-}
 
 .item{
     border-radius: 10px;
@@ -152,7 +145,7 @@ img{
 
 .info-product{
     padding: 15px 30px;
-    line-height: 2;
+    line-height: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
