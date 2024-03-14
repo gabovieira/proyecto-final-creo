@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title></title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="cart.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="container-logo">
+						<h1>
+						<img class="logo-1" src="logo.png.png" alt="Logo" width="100" height="100" />
+						  </h1>
+							</div>	<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+	
+						<a href="login/login.php" id="user-icon-button">Iniciar de seccion/registrar</a>
+						<div class="container-icon">
+							<div class="container-cart-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="icon-cart"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+									/>
+								</svg>
+								<div class="count-products">
+									<span id="contador-productos">0</span>
+								</div>
+							</div>
+			
+							<div class="container-cart-products hidden-cart">
+								<div class="row-product hidden">
+									<div class="cart-product">
+										<div class="info-cart-product">
+											<span class="cantidad-producto-carrito">1</span>
+											<p class="titulo-producto-carrito">Zapatos Nike</p>
+											<span class="precio-producto-carrito">$80</span>
+										</div>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="icon-close"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M6 18L18 6M6 6l12 12"
+											/>
+										</svg>
+									</div>
+								</div>
+			
+								<div class="cart-total hidden">
+									<h3>Total:</h3>
+									<span class="total-pagar">$200</span>
+								</div>
+								<p class="cart-empty">El carrito está vacío</p>
+							</div>
+						</div>
+					</div>
+				</div>		
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Camisas</a></li>
+						<li><a href="#">Pantalones</a></li>
+						<li><a href="#">Hoodies</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="banner">
+			<div class="content-banner">
+				<p>nueva colecciones</p>
+				<h2>verano 2024 <br />stretwear</h2>
+				<a href="#">preeventa</a>
+			</div>
+		</section>
+
+		<main class="main-content">
+			<section class="container container-features">
+				<div class="card-feature">
+					<i class="fa-solid fa-plane-up"></i>
+					<div class="feature-content">
+						<span>Envío gratuito a nivel mundial</span>
+						<p>En pedido superior a $150</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-wallet"></i>
+					<div class="feature-content">
+						<span>Contrareembolso</span>
+						<p>100% garantía de devolución de dinero</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-gift"></i>
+					<div class="feature-content">
+						<span>Tarjeta regalo especial</span>
+						<p>Ofrece bonos especiales con regalo</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-headset"></i>
+					<div class="feature-content">
+						<span>Servicio al cliente 24/7</span>
+						<p>LLámenos 24/7 al 12345678</p>
+					</div>
+				</div>
+			</section>
+			<section class="container top-products">
+				<h1 class="heading-1">Productos</h1>
+			</section>
+			<div class="container-items">
+			<!--camisas-->
+				<div class="item">
+					<figure>
+						<img
+							src="camisas/CAMISA GALLERY DEPT  OVERSIZE.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>CAMISA GALLERY DEPT  OVERSIZE</h2>
+						<p class="price">$15</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="camisas/CAMISA NUDE PROJECT  BOXY FIT.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>CAMISA NUDE PROJECT  BOXY FIT</h2>
+						<p class="price">$20</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="camisas/CAMISA REPRESENT  OVERSIZE.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>CAMISA REPRESENT  OVERSIZE</h2>
+						<p class="price">$16</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="camisas/CAMISA UTOPÍA  TRAVIS SCOOT.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>CAMISA UTOPÍA  TRAVIS SCOOT</h2>
+						<p class="price">$25</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="camisas/CAMISA VANS OVERSIZE.jpg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>CAMISA VANS OVERSIZE</h2>
+						<p class="price">$50</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="camisas/COLECCIÓN RINPDIP  TALLAS- S-M-L- XL  CORTE- OVERSIZED  .TIENDA FÍSICA Y ONLINE  CENTRO COLONIAL CHACAITO 'LOS TECHOS ROJOS' LOCAL M-14-15-17  .SALUDOSFAMILIA HOPESURF.heic"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>CAMISA COLECCIÓN RINPDIP</h2>
+						<p class="price">$10</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<!--pantalones-->
+				<div class="item">
+					<figure>
+						<img
+							src="pantalones/JEANS OVERSIZE  BLUEJEAN CARGO.heic"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>JEANS OVERSIZE  BLUEJEAN CARGO</h2>
+						<p class="price">$30</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="pantalones/JEANS OVERSIZE  CARGO NEGRO.heic"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>JEANS OVERSIZE  CARGO NEGRO</h2>
+						<p class="price">$25</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="pantalones/JEANS OVERSIZE  DESGATADO GRIS.heic"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>JEANS OVERSIZE  DESGATADO GRIS</h2>
+						<p class="price">$30</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="pantalones/JEANS OVERSIZE  ROTO BLUEJEAN.heic"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>JEANS OVERSIZE  ROTO BLUEJEAN</h2>
+						<p class="price">$20</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="pantalones/JEANS OVERSIZE  TALLAS- 28-30-32-34-36  PRECIO- 30$  .TIENDA FÍSICACHACAITO CENTRO COLONIAL CHACAITO PASILLO 4 MONTREAL LOCAL M-14 15 17.SALUDOSFAMILIA HOPESURF.heic"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>JEANS OVERSIZE DESGATADO BLUEJEAN</h2>
+						<p class="price">$30</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="pantalones/pantalon negro.heic"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>JEANS OVERSIZE negro</h2>
+						<p class="price">$30</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+			<!--hoodies-->
+
+			<div class="item">
+				<figure>
+					<img
+						src="HOODIES/HOODIE BILLABON NARANJA.heic"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HOODIE BILLABON NARANJA</h2>
+					<p class="price">$55</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="HOODIES/HOODIE DC BEIGE.heic"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HOODIE DC BEIGE</h2>
+					<p class="price">$30</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+					
+			<div class="item">
+				<figure>
+					<img
+						src="HOODIES/HOODIE DC NEGRO.heic"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HOODIE DC NEGRO</h2>
+					<p class="price">$45</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>		
+					
+			<div class="item">
+				<figure>
+					<img
+						src="HOODIES/HOODIE DC VERDE.heic"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HOODIE DC VERDE</h2>
+					<p class="price">$35</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>	
+					
+			<div class="item">
+				<figure>
+					<img
+						src="HOODIES/HOODIE QUISILVER VERDE OLIVA.heic"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HOODIE QUISILVER VERDE OLIVA</h2>
+					<p class="price">$30</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>	
+		</div>
+
+
+			
+				
+		
+					<br>
+
+
+
+		
+			<section class="container blogs">
+				<h1 class="heading-1">NOTICIAS</h1>
+
+				<div class="container-blogs">
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="https://media.fashionnetwork.com/m/a9dd/38bc/0d32/0c7b/fb80/123d/687f/85ac/dbbc/61e3/61e3.jpg" alt="Imagen Blog 1" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>La moda de Luto </h3>
+							<span>28 Noviembre 2021</span>
+							<p>Virgil Abloh, director artístico de Louis Vuitton y fundador de Off-White, muere de cáncer a los 41 años</p>
+								
+							<a href="https://cnnespanol.cnn.com/2021/11/28/muere-virgil-abloh-director-artistico-de-louis-vuitton-trax/" class="btn-read-more">Leer más</a>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="https://www.coresurfingshop.com/blog/wp-content/uploads/2023/01/EL-ORIGEN-DE-STUSSY-.jpg" alt="Imagen Blog 2" />
+							<div class="button-group-blog">
+								<span>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-link"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>Stussy el padre del streetware</h3>
+							
+							<p>
+								Stüssy, La historia de la marca que inventó el Streetwear tiene su origen en el surf
+							</p>
+							<a href="https://www.coresurfingshop.com/blog/origen-de-stussy-espana/" class="btn-read-more">Leer más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Dirección: av.bolivar edif.Libertad local 18 Caracas Venezuela
+							</li>
+							<li>Teléfonos: 0412-705-13</li>
+							<li>Fax: 55555300</li>
+							<li>EmaiL: josegvieira0102@gmail.com</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+							<span class="pinterest">
+								<i class="fa-brands fa-pinterest-p"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Acerca de Nosotros</a></li>
+							<li><a href="#">Información Delivery</a></li>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">Contactános</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>
+						Desarrollado por Jean Franco Kusniar y Gabriel Vieira para el mundo &copy; 2024
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+		
+	</body>
+</html>
