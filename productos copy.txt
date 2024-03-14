@@ -1,0 +1,109 @@
+[
+  {
+    "type": "item",
+    "image": "vistas/img/camisas/CAMISA GALLERY DEPT  OVERSIZE.jpg",
+    "name": "CAMISA  GALLERY DEPT  OVERSIZE",
+    "price": "$15",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+  {
+    "type": "azul",
+    "image": "vistas/img/camisas/CAMISA REPRESENT  OVERSIZE.jpg",
+    "name": "CAMISA REPRESENT OVERSIZE",
+    "price": "$16",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+  {
+    "type": "item",
+    "image": "vistas/img/camisas/CAMISA UTOPÍA  TRAVIS SCOOT.jpg",
+    "name": "CAMISA UTOPÍA TRAVIS SCOOT",
+    "price": "$25",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+  {
+    "type": "item",
+    "image": "vistas/img/camisas/CAMISA VANS OVERSIZE.jpg",
+    "name": "CAMISA VANS OVERSIZE",
+    "price": "$50",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+  {
+    "type": "item",
+    "image": "vistas/img/camisas/COLECCIÓN RINPDIP  TALLAS- S-M-L- XL  CORTE- OVERSIZED  .TIENDA FÍSICA Y ONLINE  CENTRO COLONIAL CHACAITO 'LOS TECHOS ROJOS' LOCAL M-14-15-17  .SALUDOSFAMILIA HOPESURF.heic",
+    "name": "COLECCIÓN RINPDIP TALLAS- S-M-L- XL CORTE- OVERSIZED",
+    "price": "$10",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+  {
+     "type": "item",
+    "image": "vistas/img/pantalones/JEANS OVERSIZE  BLUEJEAN CARGO.heic",
+    "name": "JEANS OVERSIZE   BLUEJEAN CARGO",
+    "price": "$30",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/pantalones/JEANS OVERSIZE  CARGO NEGRO.heic",
+    "name": "JEANS OVERSIZE   CARGO NEGRO",
+    "price": "$25",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/pantalones/JEANS OVERSIZE  DESGATADO GRIS.heic",
+    "name": "JEANS OVERSIZE  DESGATADO GRIS",
+    "price": "$30",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/pantalones/JEANS OVERSIZE  ROTO BLUEJEAN.heic",
+    "name": "JEANS OVERSIZE   ROTO BLUEJEAN",
+    "price": "$20",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/pantalones/JEANS OVERSIZE  TALLAS- 28-30-32-34-36  PRECIO- 30$  .TIENDA FÍSICACHACAITO CENTRO COLONIAL CHACAITO PASILLO 4 MONTREAL LOCAL M-14 15 17.SALUDOSFAMILIA HOPESURF.heic",
+    "name": "JEANS OVERSIZE    DESGATADO BLUEJEAN",
+    "price": "$30",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/HOODIES/HOODIE BILLABON NARANJA.heic",
+    "name": "HOODIE BILLABON    NARANJA",
+    "price": "$55",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/HOODIES/HOODIE DC BEIGE.heic",
+    "name": "HOODIE DC  BEIGE",
+    "price": "$30",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/HOODIES/HOODIE DC NEGRO.heic",
+    "name": "HOODIE DC    NEGRO",
+    "price": "$45",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/HOODIES/HOODIE DC VERDE.heic",
+    "name": "HOODIE DC   VERDE",
+    "price": "$35",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  },
+   {
+     "type": "item",
+    "image": "vistas/img/HOODIES/HOODIE QUISILVER VERDE OLIVA.heic",
+    "name": "HOODIE QUISILVER VERDE OLIVA",
+    "price": "$30",
+    "add_to_cart": "<button class=\"btn-add-cart\">Añadir al carrito</button>"
+  }
+  
+  
+]
