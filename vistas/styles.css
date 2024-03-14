@@ -7,8 +7,13 @@
 }
 
 html {
+<<<<<<< HEAD
 	font-size: 62.5%;
 	font-family: 'Poppins', sans-serif;
+=======
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)
 }
 
 * {
@@ -39,10 +44,17 @@ html {
 }
 
 .hero {
+<<<<<<< HEAD
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 2rem 0;
+=======
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)
 }
 
 
@@ -61,6 +73,7 @@ html {
 }
 
 .container-logo h1 a {
+<<<<<<< HEAD
 	width: 500px;
 	height: 500px;
 
@@ -84,6 +97,37 @@ logo.png.png
 	cursor: pointer;
 	background-color: white;
 	
+=======
+  width: 500px;
+  height: 500px;
+}
+logo.png.png .container-user button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#fas fa-user {
+  display: flex;
+  color: var(--primary-color);
+  position: relative;
+  left: 10px;
+}
+
+.container-user .user-icon {
+  font-size: 3rem;
+  position: center;
+  color: var(--primary-color);
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+#user-icon-button {
+  color: var(--primary-color);
+  position: relative;
+  font-size: 15px;
+  left: -3px;
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)
 }
 
 
@@ -120,16 +164,59 @@ logo.png.png
 }
 
 .navbar {
+<<<<<<< HEAD
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 0;
+=======
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)
 }
 
 .navbar .fa-bars {
 	display: none;
 }
+<<<<<<< HEAD
 
+=======
+form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+ }
+ 
+ form input[type="text"] {
+  flex: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  background-color: #ffffff;
+  outline: auto;
+  outline-color: var(--primary-color);
+}
+ 
+ form button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+ }
+ 
+ form button:hover {
+  background-color: #0069d9;
+ }
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)
 .menu {
 	display: flex;
 	gap: 2rem;
@@ -172,6 +259,7 @@ logo.png.png
 
 
 .search-form {
+<<<<<<< HEAD
     position: relative;
     display: flex;
     align-items: center;
@@ -181,6 +269,19 @@ logo.png.png
     background-color: #fff;
     height: 4.4rem;
     overflow: hidden;
+=======
+  position: relative;
+  display: flex;
+  border: 2px;
+  border-color: var(--primary-color);
+  border-radius: 8rem;
+  background-color: #fff;
+  height: 52.4px;
+  overflow: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)
 }
 .search-form input {
 	outline: none;
@@ -751,18 +852,28 @@ logo.png.png
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+<<<<<<< HEAD
 	.copyright {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 1.5rem;
 	}
+=======
+  .copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)
 }
 
 /* ********************************** */
 /*       MEDIA QUERIES -- 468px       */
 /* ********************************** */
 @media (max-width: 468px) {
+<<<<<<< HEAD
 	html {
 		font-size: 42.5%;
 	}
@@ -861,3 +972,103 @@ logo.png.png
 		font-size: 1.6rem;
 	}
 }
+=======
+  html {
+    font-size: 42.5%;
+  }
+
+  .content-banner {
+    max-width: 50rem;
+    padding: 22rem 0;
+  }
+
+  .heading-1 {
+    font-size: 2.8rem;
+  }
+
+  .card-feature {
+    flex-direction: column;
+    border-radius: 2rem;
+  }
+
+  .feature-content {
+    align-items: center;
+  }
+
+  .feature-content p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .feature-content span {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .container-options span {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+  }
+
+  .container-products {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+  }
+
+  .container-img .discount {
+    font-size: 2rem;
+  }
+
+  .content-card-product h3 {
+    font-size: 2.2rem;
+  }
+
+  .gallery {
+    grid-template-rows: repeat(2, 20rem);
+  }
+
+  .blogs {
+    padding: 2rem;
+  }
+
+  .container-blogs {
+    grid-template-columns: 1fr;
+    height: 75rem;
+  }
+
+  .content-blog h3 {
+    font-size: 2.4rem;
+  }
+
+  .content-blog span {
+    font-size: 1.8rem;
+  }
+
+  .content-blog p {
+    font-size: 2.2rem;
+  }
+
+  .btn-read-more {
+    font-size: 1.8rem;
+  }
+
+  .contact-info ul,
+  .information ul,
+  .my-account ul {
+    display: none;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .menu-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .content p {
+    font-size: 1.6rem;
+  }
+}
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)

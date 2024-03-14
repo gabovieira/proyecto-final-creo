@@ -118,9 +118,22 @@ img{
 
 
 /* Main */
+<<<<<<< HEAD
 .container-items {
     display: flex;
     flex-wrap: wrap;
+=======
+.container-items{
+  
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+>>>>>>> parent of 45e308d (proyecto finalizado totalmente)
 }
 
 .item {
@@ -163,7 +176,7 @@ img{
 
 .info-product{
     padding: 15px 30px;
-    line-height: 1;
+    line-height: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;

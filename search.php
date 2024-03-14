@@ -15,7 +15,7 @@
             <div class="container hero">
                 <div class="container-logo">
                     <h1>
-                        <img class="logo-1" src="vistas/img/logo.png.png" alt="Logo" width="100" height="100" />
+                        <img class="logo-1" src="logo.png.png" alt="Logo" width="100" height="100" />
                     </h1>
                 </div>
 
@@ -107,38 +107,40 @@
         </form>
         <div class="container-items">
             <?php
-
+            // Check if the form was submitted
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $searchTerm = isset($_POST['search_term']) ? $_POST['search_term'] : '';
 
-
+                // Define the path to your JSON file
                 $filePath = 'productos copy.txt';
 
-
+                // Check if the file exists
                 if (file_exists($filePath)) {
-
+                    // Read the content of the JSON file
                     $productsJson = file_get_contents($filePath);
 
-
+                    // Decode the JSON content into an associative array
                     $productsArray = json_decode($productsJson, true);
 
 
-
+                    // Verificamos si la decodificación fue exitosa
                     if (json_last_error() !== JSON_ERROR_NONE) {
                         echo 'Error: El archivo de productos no es un JSON válido.';
                         exit;
                     }
 
+                    // Check if the decoding was successful
                     if (is_array($productsArray)) {
                         $matchingProducts = [];
 
-
+                        // Iterate through the products and search for a match
                         foreach ($productsArray as $product) {
                             if (stripos($product["name"], $searchTerm) !== false) {
                                 $matchingProducts[] = $product;
                             }
                         }
 
+                        // Display the matching products
                         if (empty($matchingProducts)) {
                             echo 'The term was not found.';
                         } else {;
