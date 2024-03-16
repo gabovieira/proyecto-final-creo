@@ -105,70 +105,72 @@
             <input type="text" name="search_term" placeholder="Ingrese el término de búsqueda">
             <button type="submit">buscar</button>
         </form>
-        <div class="container-items">
-            <?php
 
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                $searchTerm = isset($_POST['search_term']) ? $_POST['search_term'] : '';
+        <?php
 
-
-                $filePath = 'productos copy.txt';
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $searchTerm = isset($_POST['search_term']) ? $_POST['search_term'] : '';
 
 
-                if (file_exists($filePath)) {
-
-                    $productsJson = file_get_contents($filePath);
+            $filePath = 'productos copy.txt';
 
 
-                    $productsArray = json_decode($productsJson, true);
+            if (file_exists($filePath)) {
+
+                $productsJson = file_get_contents($filePath);
+
+
+                $productsArray = json_decode($productsJson, true);
 
 
 
-                    if (json_last_error() !== JSON_ERROR_NONE) {
-                        echo 'Error: El archivo de productos no es un JSON válido.';
-                        exit;
+                if (json_last_error() !== JSON_ERROR_NONE) {
+                    echo 'Error: El archivo de productos no es un JSON válido.';
+                    exit;
+                }
+
+                if (is_array($productsArray)) {
+                    $matchingProducts = [];
+
+
+                    foreach ($productsArray as $product) {
+                        if (stripos($product["name"], $searchTerm) !== false) {
+                            $matchingProducts[] = $product;
+                        }
                     }
 
-                    if (is_array($productsArray)) {
-                        $matchingProducts = [];
+                    if (empty($matchingProducts)) {
+                        echo 'producto no existe.';
+                    } else {;
+                        echo '<div class="container-items">';
 
+                        foreach ($matchingProducts as $product) {
+                            echo '<li>';
+                            echo '<div class="item">';
+                            echo '<figure>';
+                            echo '<img src="' . $product["image"] . '" alt="' . $product["name"] . '">';
+                            echo '</figure>';
+                            echo '<div class="info-product">';
+                            echo '<h2>' . $product["name"] . '</h2>';
+                            echo '<p class="price">' . $product["price"] . '</p>';
+                            echo $product["add_to_cart"];
+                            echo '</div>';
 
-                        foreach ($productsArray as $product) {
-                            if (stripos($product["name"], $searchTerm) !== false) {
-                                $matchingProducts[] = $product;
-                            }
+                            echo '</div>';
+                            echo '</li>';
                         }
-
-                        if (empty($matchingProducts)) {
-                            echo 'The term was not found.';
-                        } else {;
-                            echo '<ul>';
-                            foreach ($matchingProducts as $product) {
-                                echo '<li>';
-                                echo '<div class="item">';
-                                echo '<figure>';
-                                echo '<img src="' . $product["image"] . '" alt="' . $product["name"] . '">';
-                                echo '</figure>';
-                                echo '<div class="info-product">';
-                                echo '<h2>' . $product["name"] . '</h2>';
-                                echo '<p class="price">' . $product["price"] . '</p>';
-                                echo $product["add_to_cart"];
-                                echo '</div>';
-                                echo '</div>';
-                                echo '</li>';
-                            }
-                            echo '</ul>';
-                        }
-                    } else {
-                        echo 'Error: El archivo de productos no es un JSON válido.';
+                        echo '</div>';
                     }
                 } else {
-                    echo 'Error: El archivo de productos no existe.';
+                    echo 'Error: El archivo de productos no es un JSON válido.';
                 }
+            } else {
+                echo 'Error: El archivo de productos no existe.';
             }
-            ?>
+        }
+        ?>
 
-        </div>
+
         <footer class="footer">
 
             <div class="container container-footer">

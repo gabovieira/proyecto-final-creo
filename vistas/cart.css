@@ -119,6 +119,13 @@ img{
 
 /* Main */
 
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 7px;
+}
+
 .item{
     border-radius: 10px;
 }
@@ -145,12 +152,11 @@ img{
 
 .info-product{
     padding: 15px 30px;
-    line-height: 1;
+    line-height: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 
 .price{
     font-size: 18px;

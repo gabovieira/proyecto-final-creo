@@ -297,6 +297,8 @@ button[type="submit"] {
   background-color: var(--background-color);
 }
 
+
+
 /* ********************************** */
 /*              FEATURES              */
 /* ********************************** */
@@ -388,6 +390,7 @@ button[type="submit"] {
   font-size: 1.3rem;
   color: var(--primary-color);
 }
+
 
 /* ********************************** */
 /*                BLOGS               */
